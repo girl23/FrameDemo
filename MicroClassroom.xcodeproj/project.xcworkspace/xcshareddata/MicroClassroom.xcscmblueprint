@@ -1,0 +1,24 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "3bba118c-7058-054f-9082-e3a6fb3194b9++6736" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3bba118c-7058-054f-9082-e3a6fb3194b9++6736" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0A0520D1-FBCD-4BD7-8AFB-655619640BA7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3bba118c-7058-054f-9082-e3a6fb3194b9++6736" : "MicroClassroom\/MicroClassroom\/Vendor\/MJRefresh\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MicroClassroom",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MicroClassroom.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.100.8\/wksc",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3bba118c-7058-054f-9082-e3a6fb3194b9++6736"
+    }
+  ]
+}

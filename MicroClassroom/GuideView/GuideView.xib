@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuideView">
+            <connections>
+                <outlet property="myPageControl" destination="DNu-3I-Qh5" id="ewJ-LC-9dp"/>
+                <outlet property="myScrollView" destination="6ac-Hn-Y6R" id="gAN-3X-j1u"/>
+                <outlet property="userNowBtn" destination="rUz-VZ-N6k" id="Ki7-c1-wW4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="640"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ac-Hn-Y6R">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="640"/>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="DNu-3I-Qh5">
+                    <rect key="frame" x="180" y="568" width="39" height="37"/>
+                    <color key="pageIndicatorTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.35420271851207419" green="0.69234930337411837" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </pageControl>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUz-VZ-N6k">
+                    <rect key="frame" x="149" y="539" width="102" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="102" id="NB8-sC-vWA"/>
+                        <constraint firstAttribute="height" constant="29" id="pIm-ZW-1yb"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="guide_4_03.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="按下_03.png"/>
+                    <connections>
+                        <action selector="useNow:" destination="-1" eventType="touchUpInside" id="Kyo-ax-LSk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rUz-VZ-N6k" firstAttribute="centerX" secondItem="6ac-Hn-Y6R" secondAttribute="centerX" id="4gy-jX-pdo"/>
+                <constraint firstAttribute="bottom" secondItem="6ac-Hn-Y6R" secondAttribute="bottom" id="77S-rG-kS6"/>
+                <constraint firstItem="DNu-3I-Qh5" firstAttribute="centerX" secondItem="6ac-Hn-Y6R" secondAttribute="centerX" constant="-0.5" id="CRg-tI-Ryk"/>
+                <constraint firstAttribute="trailing" secondItem="6ac-Hn-Y6R" secondAttribute="trailing" id="FJ2-pA-1yM"/>
+                <constraint firstAttribute="bottom" secondItem="DNu-3I-Qh5" secondAttribute="bottom" constant="35" id="H98-Cg-CfZ"/>
+                <constraint firstItem="DNu-3I-Qh5" firstAttribute="top" secondItem="rUz-VZ-N6k" secondAttribute="bottom" id="a42-Ou-dId"/>
+                <constraint firstItem="6ac-Hn-Y6R" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="b5B-SL-8Of"/>
+                <constraint firstItem="6ac-Hn-Y6R" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iKM-KS-LJv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="312" y="288"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="guide_4_03.png" width="323" height="90"/>
+        <image name="按下_03.png" width="102" height="32"/>
+    </resources>
+</document>
